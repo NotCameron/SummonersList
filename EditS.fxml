@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="800.0" style="-fx-background-color: #1B212C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SkinTable">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextField fx:id="skt2" promptText="Skin Theme" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+      <TextField fx:id="tier2" promptText="Tier" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+      <TextField fx:id="oep2" promptText="OE Price" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+      <TextField fx:id="rp2" promptText="RP Price" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+      <Button fx:id="add" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#addAction" text="Add" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+      <Label text="Skin Edit" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="5" GridPane.columnSpan="5">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Label>
+      <TextField fx:id="skt" promptText="Skin Theme" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <TextField fx:id="tier" promptText="Tier" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <TextField fx:id="oep" promptText="OE Price" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      <TextField fx:id="rpp" promptText="RP Price" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+      <Label text="Edit Existing Skin" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label maxWidth="1.7976931348623157E308" text="Create new Skin" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label maxWidth="1.7976931348623157E308" text="Remove Skin" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="rm" mnemonicParsing="false" onAction="#removeAction" text="Remove" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      <CheckBox fx:id="gem2" mnemonicParsing="false" text="Gemstones" textFill="WHITE" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+      <CheckBox fx:id="gem" mnemonicParsing="false" text="Gemstones" textFill="WHITE" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+      <CheckBox fx:id="unl" mnemonicParsing="false" text="Unlockable" textFill="WHITE" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+      <CheckBox fx:id="unl2" mnemonicParsing="false" text="Unlockable" textFill="WHITE" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+      <Button fx:id="upd" layoutX="110.0" layoutY="200.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#updateAction" text="Update" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+      <ComboBox fx:id="chdp" prefWidth="150.0" promptText="Skin Name" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <ComboBox fx:id="rmdp" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+      <TextField fx:id="sknm" promptText="Skin Name" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <TextField fx:id="nsknm" promptText="Skin Name" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <ComboBox fx:id="ch" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+   </children>
+</GridPane>

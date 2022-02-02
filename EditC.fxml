@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="800.0" style="-fx-background-color: #1B212C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChampionTable">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextField fx:id="nch" promptText="Name" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <TextField fx:id="ndt" promptText="Damage Type" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <TextField fx:id="nrole" promptText="Role" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      <TextField fx:id="nlane" promptText="Lane" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+      <TextField fx:id="nrd" promptText="Release Date" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+      <TextField fx:id="nsk" promptText="Skin Number" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+      <TextField fx:id="nbp" promptText="BE Price" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+      <TextField fx:id="nrp" promptText="RP Price" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+      <Button fx:id="addnew" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#addAction" text="Add" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+      <Label text="Champion Edit" textFill="WHITE" GridPane.columnIndex="4" GridPane.columnSpan="5">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Label>
+      <TextField fx:id="dt" promptText="Damage Type" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <TextField fx:id="role" promptText="Role" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <TextField fx:id="lane" promptText="Lane" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <TextField fx:id="sk" promptText="Skin Number" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      <TextField fx:id="rd" promptText="Release Date" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+      <TextField fx:id="bep" promptText="BE Price" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+      <TextField fx:id="rpp" promptText="RP price" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+      <Label text="Edit Existing Champion" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label maxWidth="1.7976931348623157E308" text="Create new Champion" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label maxWidth="1.7976931348623157E308" text="Remove Champion" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Button fx:id="rm" mnemonicParsing="false" onAction="#removeAction" text="Remove" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+      <Button fx:id="update" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#updateAction" text="Update" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+      <TextField fx:id="npass" promptText="Passive" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <TextField fx:id="nqab" promptText="Q Ability" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <TextField fx:id="nwab" promptText="W Ability" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+      <TextField fx:id="neab" promptText="E Ability" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+      <TextField fx:id="nrab" promptText="R Ability" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+      <TextField fx:id="role2" promptText="Role 2" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+      <TextField fx:id="lane2" promptText="Lane 2" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+      <TextField fx:id="nrole2" promptText="Role 2" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+      <TextField fx:id="nlane2" promptText="Lane 2" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+      <TextField fx:id="qab" layoutX="176.0" layoutY="198.0" promptText="Q Ability" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <TextField fx:id="wab" layoutX="254.0" layoutY="198.0" promptText="W Ability" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+      <TextField fx:id="eab" layoutX="332.0" layoutY="198.0" promptText="E Ability" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+      <TextField fx:id="rab" layoutX="410.0" layoutY="198.0" promptText="R Ability" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+      <TextField fx:id="pas" layoutX="98.0" layoutY="218.0" promptText="Passive" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <ComboBox fx:id="rmDp" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+      <ComboBox fx:id="chDp" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   </children>
+</GridPane>
